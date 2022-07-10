@@ -1,0 +1,61 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x7492D5557492D555",
+      "device": "xc7a35tcpg236-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "xup_2_to_1_mux_0": ""
+    },
+    "ports": {
+      "S": {
+        "direction": "I"
+      },
+      "g": {
+        "direction": "O"
+      },
+      "A": {
+        "direction": "I"
+      },
+      "B": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "xup_2_to_1_mux_0": {
+        "vlnv": "xilinx.com:xup:xup_2_to_1_mux:1.0",
+        "xci_name": "design_1_xup_2_to_1_mux_0_0"
+      }
+    },
+    "nets": {
+      "S_1": {
+        "ports": [
+          "S",
+          "xup_2_to_1_mux_0/select"
+        ]
+      },
+      "xup_2_to_1_mux_0_y": {
+        "ports": [
+          "xup_2_to_1_mux_0/y",
+          "g"
+        ]
+      },
+      "A_1": {
+        "ports": [
+          "A",
+          "xup_2_to_1_mux_0/a"
+        ]
+      },
+      "B_1": {
+        "ports": [
+          "B",
+          "xup_2_to_1_mux_0/b"
+        ]
+      }
+    }
+  }
+}
